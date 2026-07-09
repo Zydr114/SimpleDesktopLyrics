@@ -1,6 +1,6 @@
 # SimpleDesktopLyrics
 
-极简 Windows 桌面歌词——通过 [SMTC](https://learn.microsoft.com/windows/uwp/audio-video-camera/system-media-transport-controls) 与任意播放器同步，悬浮于桌面所有窗口之上，鼠标穿透、不打扰正常使用。
+极简 Windows 桌面歌词——通过 [SMTC](https://learn.microsoft.com/windows/uwp/audio-video-camera/system-media-transport-controls) 与任意播放器同步，悬浮于桌面所有窗口之上，鼠标穿透（待实现）、不打扰正常使用。
 
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%201909+-blue)
 ![.NET](https://img.shields.io/badge/.NET-10-512BD4)
