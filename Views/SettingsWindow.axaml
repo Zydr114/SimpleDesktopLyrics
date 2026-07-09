@@ -4,7 +4,7 @@
         x:Class="EasyDesktopLyrics.Views.SettingsWindow"
         x:DataType="vm:SettingsViewModel"
         Title="EasyDesktopLyrics 设置"
-        Width="600" Height="680" MinWidth="520" MinHeight="560"
+        Width="640" Height="680" MinWidth="540" MinHeight="560"
         WindowStartupLocation="CenterScreen">
 
   <Window.Styles>
@@ -121,19 +121,19 @@
             <TextBlock Text="歌词位置" FontWeight="Medium" />
             <ComboBox ItemsSource="{Binding PresetOptionLabels}"
                       SelectedIndex="{Binding SelectedPresetIndex, Mode=TwoWay}" />
-            <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="6" Margin="2,4,0,0">
-              <TextBlock Text="水平" Grid.Column="0" VerticalAlignment="Center" FontSize="12" Width="28" />
+            <Grid ColumnDefinitions="30,*,45" ColumnSpacing="6" Margin="2,4,0,0">
+              <TextBlock Text="水平" Grid.Column="0" VerticalAlignment="Center" FontSize="12" />
               <Slider Minimum="5" Maximum="95" TickFrequency="1" Grid.Column="1"
                       Value="{Binding PositionXPct, Mode=TwoWay}" />
-              <TextBlock Text="{Binding PositionXPct, StringFormat={}{0:F0}%}"
-                         Grid.Column="2" VerticalAlignment="Center" FontSize="12" Width="36" />
+              <TextBlock Text="{Binding PositionXPct, StringFormat='{}{0:F0}%'}"
+                         Grid.Column="2" VerticalAlignment="Center" FontSize="12" TextAlignment="Right" />
             </Grid>
-            <Grid ColumnDefinitions="Auto,*,Auto" ColumnSpacing="6" Margin="2,0,0,0">
-              <TextBlock Text="垂直" Grid.Column="0" VerticalAlignment="Center" FontSize="12" Width="28" />
+            <Grid ColumnDefinitions="30,*,45" ColumnSpacing="6" Margin="2,2,0,0">
+              <TextBlock Text="垂直" Grid.Column="0" VerticalAlignment="Center" FontSize="12" />
               <Slider Minimum="5" Maximum="95" TickFrequency="1" Grid.Column="1"
                       Value="{Binding PositionYPct, Mode=TwoWay}" />
-              <TextBlock Text="{Binding PositionYPct, StringFormat={}{0:F0}%}"
-                         Grid.Column="2" VerticalAlignment="Center" FontSize="12" Width="36" />
+              <TextBlock Text="{Binding PositionYPct, StringFormat='{}{0:F0}%'}"
+                         Grid.Column="2" VerticalAlignment="Center" FontSize="12" TextAlignment="Right" />
             </Grid>
           </StackPanel>
         </StackPanel>
