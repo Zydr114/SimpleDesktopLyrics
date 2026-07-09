@@ -1,0 +1,26 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:EasyDesktopLyrics.ViewModels"
+        x:Class="EasyDesktopLyrics.Views.LyricsOverlayWindow"
+        x:DataType="vm:OverlayViewModel"
+        WindowDecorations="None"
+        TransparencyLevelHint="Transparent"
+        Background="{x:Null}"
+        Topmost="True"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        CanResize="False"
+        SizeToContent="WidthAndHeight">
+
+  <Border Background="{Binding EditBackground}"
+          CornerRadius="6"
+          Padding="12,6">
+    <Viewbox MaxWidth="{Binding MaxTextWidth}"
+             StretchDirection="DownOnly">
+      <StackPanel x:Name="RootPanel" Spacing="{Binding LineSpacing}">
+        <!-- 内容由代码后置动态构建，支持描边层切换 -->
+      </StackPanel>
+    </Viewbox>
+  </Border>
+
+</Window>

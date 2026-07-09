@@ -1,0 +1,14 @@
+## Ignore build outputs
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+## Ignore log/data runtime files
+*.log
+%APPDATA%/
+
+## Ignore publish outputs (too large for git, use GitHub Releases)
+publish/
+PublishProfiles/
