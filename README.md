@@ -23,11 +23,11 @@
 | **全光谱色板** | 内置 100 色 PS 式色板，一键选取歌词颜色 |
 | **位置预设** | 九宫格快捷定位 + 水平/垂直百分比滑块，覆盖屏幕任意位置 |
 | **手动校正** | 自动匹配失败时可手动搜索指定歌词，支持单曲偏移 |
-| **极轻量** | 唯一第三方依赖为 Avalonia，单文件分发包约 32MB（压缩后），空闲 CPU ≈ 0% |
+| **极轻量** | 唯一第三方依赖为 Avalonia，**单 exe 无需任何额外文件**，约 21MB，空闲 CPU ≈ 0% |
 
 ## 使用
 
-1. 下载最新 [Release](https://github.com/Zydr114/SimpleDesktopLyrics/releases) 中的 zip 包，解压到任意目录
+1. 下载最新 [Release](https://github.com/Zydr114/SimpleDesktopLyrics/releases) 中的 `EasyDesktopLyrics.exe`，放到任意目录双击运行
 2. 运行 `EasyDesktopLyrics.exe`
 3. 打开任意音乐播放器开始播放，歌词自动出现
 4. 右下角托盘图标：**锁定/解锁拖动** · **显示/隐藏** · **设置** · **退出**
@@ -86,7 +86,7 @@ dotnet publish -c Release -r win-x64 --self-contained true `
   -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=true `
   -p:PublishTrimmed=true -p:TrimMode=partial
 
-# 产物与 3 个 native DLL 一起打包即可分发
+# 产物为单个 EasyDesktopLyrics.exe，无需任何额外文件即可分发
 # bin\Release\net10.0-windows10.0.19041.0\win-x64\publish\
 ```
 
