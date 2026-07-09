@@ -9,9 +9,9 @@
 ## 截图
 
 ![悬浮歌词](screenshots/overlay.png)
-![设置面板](screenshots/settings.png)
+![设置面板](screenshots/setting.png)
 
-> 截图文件请命名为 `screenshots/overlay.png` 和 `screenshots/settings.png`。
+> 截图文件请命名为 `screenshots/overlay.png` 和 `screenshots/setting.png`。
 
 ## 功能
 
